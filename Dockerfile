@@ -1,0 +1,23 @@
+FROM ubuntu:trusty
+
+MAINTAINER Leonard Marschke <leonard@marschke.me>
+
+#update software repos
+RUN apt-get update
+
+#ugrade software
+RUN apt-get -y upgrade
+
+RUN apt-get -y install apt-utils
+
+#install some useful tools
+RUN apt-get -y install \
+        git \
+        syslinux-common \
+        syslinux-utils \
+        debootstrap
+
+#clean up
+RUN apt-get clean
+
+RUN rm -rf /var/lib/apt/lists/*
