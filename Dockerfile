@@ -13,8 +13,6 @@ RUN apt-get -y install apt-utils
 #install some useful tools
 RUN apt-get -y install \
         git \
-        syslinux-common \
-        syslinux-utils \
         debootstrap
 
 #clean up
