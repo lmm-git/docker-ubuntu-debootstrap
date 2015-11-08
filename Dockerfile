@@ -14,7 +14,8 @@ RUN apt-get -y install apt-utils
 RUN apt-get -y install \
         git \
         debootstrap \
-        ssh-client
+        ssh-client \
+        curl
 
 #clean up
 RUN apt-get clean
