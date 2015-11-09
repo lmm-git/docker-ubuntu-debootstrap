@@ -3,21 +3,20 @@ FROM ubuntu:latest
 MAINTAINER Leonard Marschke <leonard@marschke.me>
 
 #update software repos
-RUN apt-get update
+RUN apt-get update \
 
 #ugrade software
-RUN apt-get -y upgrade
+    && apt-get -y upgrade \
 
-RUN apt-get -y install apt-utils
+    && apt-get -y install apt-utils \
 
 #install some useful tools
-RUN apt-get -y install \
+    && apt-get -y install \
         git \
         debootstrap \
         ssh-client \
-        curl
+        curl \
 
 #clean up
-RUN apt-get clean
-
-RUN rm -rf /var/lib/apt/lists/*
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
