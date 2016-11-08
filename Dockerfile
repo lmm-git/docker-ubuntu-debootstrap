@@ -17,6 +17,9 @@ RUN apt-get update \
         ssh-client \
         curl \
         squashfs-tools \
+        syslinux \
+        genisoimage \
+        memtest86+ \
 
 #clean up
     && apt-get clean \
