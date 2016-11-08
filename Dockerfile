@@ -20,6 +20,7 @@ RUN apt-get update \
         syslinux \
         genisoimage \
         memtest86+ \
+        isolinux \
 
 #clean up
     && apt-get clean \
