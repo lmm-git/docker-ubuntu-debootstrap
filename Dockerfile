@@ -21,6 +21,7 @@ RUN apt-get update \
         genisoimage \
         memtest86+ \
         isolinux \
+        live-build \
 
 #clean up
     && apt-get clean \
