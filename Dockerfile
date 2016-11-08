@@ -17,10 +17,8 @@ RUN apt-get update \
         ssh-client \
         curl \
         squashfs-tools \
-        syslinux \
         genisoimage \
         memtest86+ \
-        isolinux \
         live-build \
 
 #clean up
