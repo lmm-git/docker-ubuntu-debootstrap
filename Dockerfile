@@ -16,6 +16,7 @@ RUN apt-get update \
         debootstrap \
         ssh-client \
         curl \
+        squashfs-tools \
 
 #clean up
     && apt-get clean \
