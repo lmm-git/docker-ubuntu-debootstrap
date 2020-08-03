@@ -20,7 +20,12 @@ RUN apt-get update \
         genisoimage \
         memtest86+ \
         live-build \
-
+        xorriso \
+        isolinux \
+        syslinux-efi \
+        grub-pc-bin \
+        grub-efi-amd64-bin \
+        mtools \
 #clean up
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
