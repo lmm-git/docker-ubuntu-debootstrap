@@ -26,6 +26,7 @@ RUN apt-get update \
         grub-pc-bin \
         grub-efi-amd64-bin \
         mtools \
+        dosfstools \
 #clean up
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
