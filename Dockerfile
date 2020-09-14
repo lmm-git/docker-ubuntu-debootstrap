@@ -14,6 +14,7 @@ RUN apt-get update \
     && apt-get -y install \
         git \
         debootstrap \
+        zstd \
         ssh-client \
         curl \
         squashfs-tools \
