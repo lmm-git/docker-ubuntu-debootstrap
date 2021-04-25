@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:hirsute
 
 MAINTAINER Leonard Marschke <leonard@marschke.me>
 
