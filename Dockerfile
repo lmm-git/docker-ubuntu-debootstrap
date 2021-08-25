@@ -16,6 +16,7 @@ RUN apt-get update \
         debootstrap \
         parted \
         zstd \
+        btrfs-progs \
         ssh-client \
         curl \
         squashfs-tools \
